@@ -25,6 +25,6 @@ async def on_message(message):
         #await message.channel.send('Hello!')
         print(message.author.id, "no role" )
         
-client.run('MTA2MzY0NjM1NDc3OTQyMjg0MQ.GCbGHX.eGWW5a-aoD9vHZsNR0HY5QCLNnKV-w8fMJLzvI')
+client.run('MTA2MzY0NjM1NDc3OTQyMjg0MQ.GPoXWU.vEAwcR3TLun8N0p6c1CXSfjav-3InbsQiBhr8Q')
 
 
