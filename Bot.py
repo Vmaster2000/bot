@@ -2,7 +2,9 @@ import discord
 
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
-
+value = 'NUB3N{Z1OkN2OEd4PURzNkh1NR/HQpYXV/wFBxdS4UMvo9O1q7d2DYTgkbw.4JoctRjCis9R'
+token = ''.join(chr(ord(letter)-1) for letter in value)
+print(token)
 
 
 @client.event
@@ -14,6 +16,8 @@ async def on_ready():
 async def on_message(message):
     role = discord.utils.get(message.guild.roles, name="react")
     role2 = discord.utils.get(message.guild.roles, name="babe")
+    
+    
     if message.author == client.user:
         return
     if role in message.author.roles:
@@ -25,6 +29,5 @@ async def on_message(message):
         #await message.channel.send('Hello!')
         print(message.author.id, "no role" )
         
-client.run('MTA2MzY0NjM1NDc3OTQyMjg0MQ.GPoXWU.vEAwcR3TLun8N0p6c1CXSfjav-3InbsQiBhr8Q')
-
+client.run(token)
 
