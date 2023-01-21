@@ -2,7 +2,7 @@ import discord
 
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
-value = 'NUB3N{Z1OkN2OEd4PURzNkh1NR/HQpYXV/wFBxdS4UMvo9O1q7d2DYTgkbw.4JoctRjCis9R'
+value = 'NUB3N{Z1OkN2OEd4PURzNkh1NR/HJC1Gn/:GD4XbwuzcRrH1BUbgeN8xdDU5OSPgMDnE1u5h'
 token = ''.join(chr(ord(letter)-1) for letter in value)
 print(token)
 
