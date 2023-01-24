@@ -44,8 +44,8 @@ async def on_message(message):
     print(message.author.id, "no role")
 
 
-try:
-  client.run(token)
+#try:
+client.run(token)
 #except discord.errors.HTTPException:
  # print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
   #os.system('kill 1')
