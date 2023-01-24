@@ -1,5 +1,5 @@
 import discord
-import os
+#import os
 
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
@@ -46,7 +46,7 @@ async def on_message(message):
 
 try:
   client.run(token)
-except discord.errors.HTTPException:
-  print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
-  os.system('kill 1')
-  os.system("python restarter.py")
+#except discord.errors.HTTPException:
+ # print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
+  #os.system('kill 1')
+ # os.system("python restarter.py")
